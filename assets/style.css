@@ -1,0 +1,103 @@
+/* Hide Streamlit Elements */
+
+#MainMenu{
+visibility:hidden;
+}
+
+header{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
+
+/* Background */
+
+.stApp{
+
+background:#F4F8FC;
+
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"]{
+
+background:linear-gradient(180deg,#1E3A8A,#2563EB);
+
+}
+
+section[data-testid="stSidebar"] *{
+
+color:white;
+
+}
+
+/* Hero */
+
+.hero{
+
+background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+padding:45px;
+
+border-radius:20px;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+/* Cards */
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+height:180px;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 25px rgba(0,0,0,.15);
+
+}
+
+h2,h3{
+
+color:#1E3A8A;
+
+}
