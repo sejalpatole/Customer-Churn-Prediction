@@ -610,15 +610,6 @@ elif page=="🤖 Prediction":
 
         st.balloons()
 
-    
-
-# ==========================================================
-# Analytics Page
-# ==========================================================
-
-elif page=="📈 Analytics":
-
-    st.info("Analytics page will be added in Part 4.")
 
 # ==========================================================
 # Reports Page
