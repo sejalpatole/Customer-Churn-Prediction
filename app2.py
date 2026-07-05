@@ -146,13 +146,25 @@ font-size:14px;
 # ----------------------------------------------------------
 
 st.markdown("""
-<div class="hero-title">
-📊 Customer Churn Prediction Pro
-</div>
+<div style="
+padding:35px;
+border-radius:20px;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+color:white;
+box-shadow:0px 10px 30px rgba(0,0,0,.2);
+">
 
-<div class="hero-subtitle">
-Predict whether a telecom customer is likely to leave using Machine Learning
-and receive AI-powered business recommendations.
+<h1>📊 Customer Churn Prediction Pro</h1>
+
+<h4>AI-Powered Business Intelligence Dashboard</h4>
+
+<p>
+Predict customer churn using Machine Learning,
+analyze customer behaviour,
+generate reports,
+and improve customer retention.
+</p>
+
 </div>
 """, unsafe_allow_html=True)
 
