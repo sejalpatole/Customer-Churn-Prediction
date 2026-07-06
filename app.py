@@ -529,6 +529,13 @@ elif page == "🤖 Prediction":
         # Scale Features
         # ---------------------------------
 
+        st.write("Input Columns")
+        st.write(input_data.columns.tolist())
+
+        st.write("Scaler expects")
+        st.write(list(scaler.feature_names_in_))
+
+        st.stop()
         input_scaled = scaler.transform(input_data)
 
         # ---------------------------------
