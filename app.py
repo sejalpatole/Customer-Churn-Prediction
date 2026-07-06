@@ -525,29 +525,22 @@ elif page == "🤖 Prediction":
 
                 input_data[col] = encoder[col].transform(input_data[col])
 
-        # ---------------------------------
-        # Scale Features
-        # ---------------------------------
+       # ---------------------------------
+       # Scale Only Numerical Features
+       # ---------------------------------
 
-        st.write("Input Columns")
-        st.write(input_data.columns.tolist())
-
-        st.write("Scaler expects")
-        st.write(list(scaler.feature_names_in_))
-
-        st.stop()
-        numeric_cols = ["tenure", "MonthlyCharges", "TotalCharges"]
+        numerical_features = ["tenure", "MonthlyCharges", "TotalCharges"]
 
         input_data[numerical_features] = scaler.transform(
         input_data[numerical_features]
-        )
-
+    )
+        st.write("Model expects:", model.n_features_in_)
+        st.write("Input shape:", input_data.shape)
         # ---------------------------------
         # Predict
         # ---------------------------------
-
+ 
         prediction = model.predict(input_data)[0]
-
         probability = model.predict_proba(input_data)[0][1]
 
         st.divider()
