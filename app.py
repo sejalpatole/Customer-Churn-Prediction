@@ -536,15 +536,19 @@ elif page == "🤖 Prediction":
         st.write(list(scaler.feature_names_in_))
 
         st.stop()
-        input_scaled = scaler.transform(input_data)
+        numeric_cols = ["tenure", "MonthlyCharges", "TotalCharges"]
+
+        input_data[numerical_features] = scaler.transform(
+        input_data[numerical_features]
+        )
 
         # ---------------------------------
         # Predict
         # ---------------------------------
 
-        prediction = model.predict(input_scaled)[0]
+        prediction = model.predict(input_data)[0]
 
-        probability = model.predict_proba(input_scaled)[0][1]
+        probability = model.predict_proba(input_data)[0][1]
 
         st.divider()
 
