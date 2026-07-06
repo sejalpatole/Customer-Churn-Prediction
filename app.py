@@ -534,8 +534,8 @@ elif page == "🤖 Prediction":
         input_data[numerical_features] = scaler.transform(
         input_data[numerical_features]
     )
-        st.write("Model expects:", model.n_features_in_)
-        st.write("Input shape:", input_data.shape)
+        # st.write("Model expects:", model.n_features_in_)
+        # st.write("Input shape:", input_data.shape)
         # ---------------------------------
         # Predict
         # ---------------------------------
